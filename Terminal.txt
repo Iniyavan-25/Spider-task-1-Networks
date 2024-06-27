@@ -1,0 +1,37 @@
+1)List Network Interfaces and IP Configuration
+Command to List the Network Interfaces
+Command: 'ipconfig'
+
+List All Network Interfaces on the System
+Command: 'ipconfig /all'
+
+2)Manually Assign IP Addresses
+
+Command to set a static IP address: 
+netsh interface ip set address "Ethernet0" static 192.168.1.10 255.255.255.0 192.168.1.1
+
+Command to set DNS servers:
+netsh interface ip set dns "Ethernet0" static 8.8.8.8
+netsh interface ip add dns "Ethernet0" 8.8.4.4 index=2
+
+IP Address Conflict
+Ensure that the IP address you are assigning is not already in use by another device on the network. 
+You can ping the IP address to check for a response.
+
+3)Ping a Remote Server:
+
+Understand Packets and Packet Loss
+Packets: Units of data sent over the network.
+Packet Loss: The number of packets that do not reach their destination.
+
+Command to ping a remote server:
+ping -n 5 www.google.com
+
+4)Perform a Traceroute to a Remote Server
+
+Hops: 
+Intermediate devices (like routers) through which data passes to reach the final destination.
+
+Traceroute Command: tracert www.google.com
+
+
