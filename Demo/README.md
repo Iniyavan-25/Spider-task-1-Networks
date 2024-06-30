@@ -1,5 +1,5 @@
-# Network Topologies:
-
+# SIMULATION IN CPT
+https://github.com/Iniyavan-25/Spider-task-1-Networks/assets/166706764/08d59b4b-480b-425b-b3e8-de795814b799
 ## Star Topology
 In a star topology, each device is connected directly to a central hub or switch. 
 The central device manages and controls all communications, acting as a mediator for data flow between devices. Advantages include easy management and fault isolation, but it relies heavily on the central hub's reliability.
